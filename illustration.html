@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Changa+One:ital@0;1&family=Dancing+Script:wght@400..700&family=Erica+One&family=Limelight&family=Matemasie&family=Playwrite+DE+SAS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sonsie+One&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Changa+One:ital@0;1&family=Dancing+Script:wght@400..700&family=Erica+One&family=Limelight&family=Matemasie&family=Playwrite+DE+SAS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sonsie+One&display=swap" rel="stylesheet">
+<title>Jonathan Pohorylo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="photo/logo.png">
+        <style>
+            .zoomable .zoomable2 input[type=checkbox]{
+                display: flex;
+                
+            }
+            .zoomable .zoomable2 img{
+                transform: 0.3s ease;
+                cursor: zoom-in;
+            }
+            .zoomable input[type=checkbox]:checked~img{
+                cursor: zoom-out;
+                position: fixed;
+                 
+                @media (min-width: 768px) {
+                  transform: scale(1.5);
+                     border-left: 120px solid white;
+                     border-right: 120px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 16%;   
+                }
+                @media (max-width: 768px) {
+                     transform: scale(1.5);
+                     border-left: 115px solid white;
+                     border-right: 115px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 16%;
+                }
+                @media (max-width: 780px) {
+                     transform: scale(1.50);
+                     border-left: 100px solid white;
+                     border-right: 100px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: -10px;
+                }
+                 @media (min-width: 700px) {
+                  transform: scale(1.5);
+                     border-left: 140px solid white;
+                     border-right: 140px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 14%;   
+                }
+                @media (min-width: 680px) {
+                  transform: scale(1.75);
+                     border-left: 160px solid white;
+                     border-right: 160px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 14%;   
+                }
+                 @media (min-width: 650px) {
+                  transform: scale(1.5);
+                     border-left: 135px solid white;
+                     border-right: 135px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 10%;   
+                }
+                @media (min-width: 600px) {
+                  transform: scale(1.5);
+                     border-left: 145px solid white;
+                     border-right: 145px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 8%;   
+                }
+                @media (min-width: 550px) {
+                  transform: scale(1.5);
+                     border-left: 160px solid white;
+                     border-right: 160px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 1%;   
+                }
+                @media (min-width: 800px) {
+                     transform: scale(1.75);
+                     border-left: 130px solid white;
+                     border-right: 130px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 13%;
+                }
+               @media (min-width: 900px) {
+                     transform: scale(1.75);
+                     border-left: 160px solid white;
+                     border-right: 160px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 15%;
+                     left: 20%;
+                }
+                @media (min-width: 1000px) {
+                      transform: scale(2);
+                    border-left: 170px solid white;
+                     border-right: 170px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 20%;
+                     left: 25%;
+                }
+                 @media (min-width: 1200px) {
+                      transform: scale(2);
+                    border-left: 300px solid white;
+                     border-right: 300px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 20%;
+                     left: 15%;
+                }
+                @media (min-width: 1400px) {
+                      transform: scale(2);
+                    border-left: 350px solid white;
+                     border-right: 350px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 20%;
+                     left: 15%;
+                }
+                @media (min-width: 1500px) {
+                      transform: scale(2);
+                    border-left: 400px solid white;
+                     border-right: 400px solid white;
+                     border-top: 100px solid white;
+                     border-bottom: 200px solid white;
+                     top: 20%;
+                     left: 18%;
+                }
+            }
+            .zoomable2 input[type=checkbox]:checked~img{
+                cursor: zoom-out;
+                position: fixed;
+                 
+                @media (min-width: 768px) {
+                     
+                     border-left: 60px solid white;
+                     border-right: 60px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 350px solid white;
+                     top: clamp(-50%, 5%, 80%);
+                     left: 20%;   
+                }
+                @media (max-width: 768px) {
+                     
+                     border-left: 60px solid white;
+                     border-right: 60px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 350px solid white;
+                     top: clamp(-50%, 5%, 80%);
+                     left: 20%;
+                }
+                @media (max-width: 780px) {
+                     
+                     border-left: 70px solid white;
+                     border-right: 110px solid white;
+                     border-top: 300px solid white;
+                     border-bottom: 450px solid white;
+                     
+                     left: -10%;
+                     margin-top: -10%;
+                     
+                }
+                 @media (min-width: 700px) {
+                  
+                     border-left: 30px solid white;
+                     border-right: 30px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 350px solid white;
+                     top: clamp(-50%, 5%, 80%);
+                     left: 5%;   
+                }
+                @media (min-width: 680px) {
+                  
+                     border-left: 50px solid white;
+                     border-right: 50px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 350px solid white;
+                     top: clamp(-50%, 5%, 80%);
+                     left: 5%;   
+                }
+                 @media (min-width: 650px) {
+                  
+                     border-left: 50px solid white;
+                     border-right: 50px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 350px solid white;
+                     top: clamp(-50%, 5%, 80%);
+                     left: -5%;   
+                }
+                @media (min-width: 600px) {
+                  
+                     border-left: 40px solid white;
+                     border-right: 40px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 350px solid white;
+                     top: clamp(-50%, 5%, 80%);
+                     left: -5%;   
+                }
+                
+                @media (min-width: 540px) {
+                  transform: scale(1.1);
+                     border-left: 60px solid white;
+                     border-right: 180px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 450px solid white;
+                     top: 10%;
+                     left: 3%;   
+                }
+                @media (min-width: 570px) {
+                  transform: scale(1.2);
+                     border-left: 65px solid white;
+                     border-right: 180px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 450px solid white;
+                     top: clamp(-50%, 5%, 80%);
+                     left: 3%;   
+                }
+                @media (min-width: 585px) {
+                  transform: scale(1.25);
+                     border-left: 70px solid white;
+                     border-right: 185px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 450px solid white;
+                     top: clamp(-50%, 5%, 80%);
+                     left: 5%;   
+                }
+                @media (min-width: 800px) {
+                     transform: scale(1.75);
+                     border-left: 130px solid white;
+                     border-right: 130px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 300px solid white;
+                     top: 15%;
+                     left: 8%;
+                }
+               @media (min-width: 900px) {
+                     transform: scale(1.75);
+                     border-left: 160px solid white;
+                     border-right: 160px solid white;
+                     border-top: 300px solid white;
+                     border-bottom: 300px solid white;
+                     top: 5%;
+                     left: 8%;
+                }
+                @media (min-width: 1000px) {
+                      transform: scale(2);
+                    border-left: 170px solid white;
+                     border-right: 170px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 300px solid white;
+                     top: 15%;
+                     left: 10%;
+                }
+                 @media (min-width: 1200px) {
+                      transform: scale(2.5);
+                    border-left: 300px solid white;
+                     border-right: 300px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 300px solid white;
+                     top: 18%;
+                     left: 8%;
+                }
+                @media (min-width: 1400px) {
+                      transform: scale(2.8);
+                    border-left: 350px solid white;
+                     border-right: 350px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 300px solid white;
+                     top: 23%;
+                     left: 8%;
+                }
+                @media (min-width: 1500px) {
+                      transform: scale(2.8);
+                    border-left: 400px solid white;
+                     border-right: 400px solid white;
+                     border-top: 200px solid white;
+                     border-bottom: 300px solid white;
+                     top: 23%;
+                     left: 15%;
+                }
+            }
+            .grid-container{
+                display: grid;
+               @media (max-width: 700px) {
+                grid-template-columns: 1fr;
+                gap: 5px;
+                justify-items: center;
+               }
+               @media (min-width: 720px) {
+                grid-template-columns: 1fr;
+                gap: 5px;
+                justify-items: center;
+               }
+               @media (max-width: 760px) {
+                grid-template-columns: 1fr;
+                gap: 5px;
+                justify-items: center;
+               }
+               @media (min-width: 800px) {
+                grid-template-columns: 1fr;
+                gap: 5px;
+                justify-items: center;
+               }
+                @media (min-width: 1000px) {
+                grid-template-columns: 1fr 1fr;
+                gap: 5px;
+                justify-items: center;
+               }
+                @media (min-width: 1500px) {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 5px;
+                justify-items: center;
+               }
+            }
+            
+        </style>
+    </head>
+    <body>
+              <div class="topnav">
+        <h1>Illustration</h1>
+               
+<a href="index.html">Home</a>
+<a href="illustration.html">Illustration</a>
+<a href="photography.html">Photography</a> 
+               </div>
+    <br>
+    <div class="grid-container">
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i1.jpg" title="LOTR movie poster" width="300" style="grid_area: box1;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i2.jpg" title="The Red Winter book cover" width="300" style="grid_area: box2;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i3.jpg" title="The Haunted Library book cover" width="300" style="grid_area: box3;">
+                   </label>
+               </div>
+        
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i4.jpg" title="Chariot tarot card" width="300" style="grid_area: box4;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i5.jpg" title="Ork attacking" width="300" style="grid_area: box5;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i6.jpg" title="Knight at funeral, ispire by Mucha" width="300" style="grid_area: box6;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i7.jpg" title="Inspire from Pink Floyd song Money" width="300" style="grid_area: box7;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i8.jpg" title="Blue Eyes White Dragon" width="300" style="grid_area: box8;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i9.jpg" title="Ispire by the book, Water of Life by Grimm brother" width="300" style="grid_area: box9;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i10.jpg" title="Ispire by the book, Water of Life by Grimm brother" width="300" style="grid_area: box10;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i11.jpg" title="Ispire by the book, Treasure Island" width="300" style="grid_area: box11;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i12.jpg" title="Knight fighting the monster" width="300" style="grid_area: box12;">
+                   </label>
+               </div>
+               <div class="zoomable"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i13.jpg" title="Harkness Memorial State Rark" width="300" style="grid_area: box13;">
+                   </label>
+               </div>
+        
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i14.jpg" title="Ispire by the book, Little Red Riding Hood" height="290" style="grid_area: box14;">
+                   </label>
+               </div>
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i15.jpg" title="Ispire by the book, LOTR" height="290" style="grid_area: box15;">
+                   </label>
+               </div>
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i16.jpg" title="Ispire by the book, Children of Dune" height="290" style="grid_area: box16;">
+                   </label>
+               </div>
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i17.jpg" title="Inspire by the folklore, Black Annis" height="240" style="grid_area: box17;">
+                   </label>
+               </div>
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i18.jpg" title="Robot apocalypse" height="320" style="grid_area: box18;">
+                   </label>
+               </div>
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i19.jpg" title="The assassin" height="290" style="grid_area: box19;">
+                   </label>
+               </div>
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i20.jpg" title="Growing plants out of the ear" height="310" style="grid_area: box20;">
+                   </label>
+               </div>
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i21.jpg" title="Inspire by the kid story, The Riddle Song" height="270" style="grid_area: box21;">
+                   </label>
+               </div>
+               <div class="zoomable2"> 
+                   <label>
+                       <input type="checkbox" style="display:none;">
+                       <img src="photo/illustration/i22.jpg" title="Inspire by the kid story, The Riddle Song" height="270" style="grid_area: box22;">
+                   </label>
+               </div>
+    </div>
+    </body>
+</html>
