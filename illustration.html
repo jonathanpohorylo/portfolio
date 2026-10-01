@@ -315,7 +315,11 @@
             }
             .grid-container{
                 display: grid;
-                 
+                 @media (max-width: 480px) {
+                grid-template-columns: 1fr;
+                gap: 5px;
+                justify-items: center;
+               }
                @media (max-width: 700px) {
                 grid-template-columns: 1fr;
                 gap: 5px;
